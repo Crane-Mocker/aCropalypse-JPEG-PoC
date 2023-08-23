@@ -59,13 +59,12 @@ def parse_jpeg(f):
 	if is_vuln:
 		sanitized_name = str(sys.argv[1]).rstrip(".jpg") + "_sanitized.jpg"
 		restored_name = str(sys.argv[1]).rstrip(".jpg") + "_restored.jpg"
-		"""
+		
 		print("Sanitized jpg: ", sanitized_name)
 		with open(sanitized_name, "wb") as f_s:
 			f_s.write(cropped)
-		"""
-		print("Restored jpg: ", restored_name)
-		new_len = min(len(file[EOI_pos + 2:]), 65535) 
+		
+		print("Restored jpg: ", restored_name) 
 
 		"""
 		den_l = file[14:16]
