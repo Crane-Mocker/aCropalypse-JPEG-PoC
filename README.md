@@ -2,7 +2,7 @@
 
 > so basically the pixel 7 pro, when you crop and save a screenshot, overwrites the image with the new version, but leaves the rest of the original file in its place
 
-For JPEG, just to detect whether the cropped image is affected by aCropalypse is simple: if there are 2 `EOI` marker
+For JPEG, just to detect whether the cropped image is affected by aCropalypse is simple: if there are 2 `EOI` markers
 
 To sanitize the cropped image is also simple: delete everything after the first `EOI` marker
 
